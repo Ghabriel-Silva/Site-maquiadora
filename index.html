@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site-ketlin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+    <header class="header-container">
+        <div>
+            <img class="img-logo" src="icons/maquiagem.png" alt="img-logo">
+        </div>
+        <nav class="nav-container"> 
+            <ul class="nav-contain">
+                <li class="li-header"><a href="#">Inicio</a></li>
+                <li  class="li-header"><a href="#">Serviços</a></li>
+                <li  class="li-header"><a href="#">Depoimentos</a></li>
+                <li  class="li-header"><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+        <button class="button-agendar">Agendar</button>
+    </header>
+
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">
+               <a class="img-desktop" href="#"><img src="img/img-desktop/img-desktop-01.png" alt="slide 1"></a>
+               <a class="img-mobile" href="#"><img src="img/img-mobile/img-mobile-01.png" alt="slide 2"></a>
+            </div>
+            
+            <div class="slide-box">
+                <a class="img-desktop" href="#"><img src="img/img-desktop/img-desktop-02.png" alt="slide 2"></a>
+                <a class="img-mobile" href="#"><img src="img/img-mobile/img-mobile-02.png" alt="slide 2"></a>
+             </div>
+             
+            <div class="slide-box">
+                <a class="img-desktop" href="#"><img src="img/img-desktop/img-desktop-03.png" alt="slide 3"></a>
+                <a class="img-mobile" href="#"><img src="img/img-mobile/img-mobile-03.png" alt="slide 3"></a>
+             </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn-1"></div>
+                <div class="auto-btn-2"></div>
+                <div class="auto-btn-3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>

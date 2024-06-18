@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*Header style*/
+.header-container{
+    padding-top: 1em;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-logo{
+    width:3em;
+    margin-left: 2em;
+}
+.nav-contain{
+    display: flex;
+    flex-direction: row;
+    gap: 7em;
+}
+.button-agendar{
+    margin-right: 2em;
+}
+.li-header {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*Slider section style*/
+
