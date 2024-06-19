@@ -2,19 +2,33 @@
     box-sizing: border-box;
     margin: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+    height: 330vh;
+}
 
 /*Header style*/
+
 .header-container{
-    padding-top: 1em;
+    position: fixed;
+    padding:  1em;
     width: 100vw;
     height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
+    transition: .5s;
+}
+header.rolagem{
+    background-color:#f1b1c8;
+}
+header.rolagem a{
+    color: rgb(255, 255, 255);
 }
 .img-logo{
-    width:3em;
-    margin-left: 2em;
+    width:2em;
+    margin-left: 3em;
 }
 .nav-contain{
     display: flex;
@@ -22,14 +36,19 @@
     gap: 7em;
 }
 .button-agendar{
-    margin-right: 2em;
+    margin-right: 3em;
 }
 .li-header {
     list-style: none;
 }
 a{
     text-decoration: none;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    
 }
+
 
 /*Slider section style*/
 
