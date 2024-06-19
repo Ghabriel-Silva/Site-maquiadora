@@ -21,10 +21,8 @@ body{
     transition: .5s;
 }
 header.rolagem{
-    background-color:#f1b1c8;
-}
-header.rolagem a{
-    color: rgb(255, 255, 255);
+    background-color:rgb(240, 240, 254);
+  
 }
 .img-logo{
     width:2em;
@@ -46,9 +44,205 @@ a{
     color: #000000;
     font-family: "Open Sans", sans-serif;
     font-weight: 100;
-    
+    position: relative;
+    cursor: pointer;
 }
+.text-header-a::after{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #A96224;
+    transition: .4s;
+}
+.text-header-a:hover::after, .text-header-a:focus:after{
+    width: 100%;
+} 
+/*Button style*/
 
+.btn {
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    font-size: 15px;
+    border: none;
+  }
+  
+  /*Container styles*/
+  .container {
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  /*Main button styles*/
+  .btn {
+    position: relative;
+    height: fit-content;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    text-indent: 50px;
+    transition: 300ms;
+    font-weight: 200;
+  }
+  
+  .btn::before {
+    content: "";
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #A96224;
+    z-index: -1;
+  }
+  
+  .btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transition: 400ms;
+  }
+  
+  .btn:hover {
+    text-indent: 15px;
+    color: white;
+    font-weight: 600;
+  }
+  .btn:active {
+    scale: 0.95;
+  }
+  
+  .btn:hover::before {
+    width: 100%;
+  }
+  
+  .btn:hover::after {
+    left: calc(100% - 25px);
+  }
+  
+  /*Section serviços*/
+  
+  .Servicos{
+    width: 100%;
+    height: auto;
+  }
+  .titulo-servicos{
+    text-align: center;
+    font-size: 2.5em;
+    padding: 1.5em 0 0 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight:300;
+    color:#E05E8C;
+  }
+  .container-servico{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  .card-servico{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px; /* Bordas arredondadas para um visual mais elegante */
+    background-color: #fff; /* Cor de fundo branco para contraste */
+    transition: box-shadow 0.3s ease; /* Transição suave para hover */
+  }
+  .card-servico:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada ao hover */
+}
+ 
+  .card-servico-titulo{
+    padding-top: 40px;
+    color:#A96224 ;
+    padding-bottom: 25px;
+    font-size:1.3em;
+  }
+  .card-servico-texto{
+    text-align: center;
+    padding: 10px 20px 50px;
+  }
+  .cta {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding-bottom: 40px;
+  }
 
-/*Slider section style*/
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
 
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #A96224;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+@media (max-width:900px){
+        .container-servico{
+            display: flex;
+            flex-direction: column;
+        }
+        
+}
