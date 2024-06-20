@@ -57,7 +57,9 @@ section.slider{
 #radio3:checked ~ .primeiro{
     margin-left: -50%;
 }
-@media (max-width:700px){
+
+
+@media (max-width:768px){
     .img-desktop{
         display: none;
     }
@@ -67,7 +69,6 @@ section.slider{
     .nav-auto, .nav-manual{
         margin-top: 168%;
     }
-    .header-container{
-        display: none;
-    }
+   
+    
 }

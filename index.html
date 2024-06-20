@@ -6,24 +6,27 @@
     <title>site-ketlin</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="hambuger.css">
 </head>
 <body>
-    <header class="header-container">
+    <header class="header-container" id="header">
         <div>
             <img class="img-logo" src="icons/maquiagem.png" alt="img-logo">
         </div>
-        <nav class="nav-container"> 
+        <nav class="nav-container" id="nav" id="menu"> 
+          <button id="btn-mobile">Menu</button>
             <ul class="nav-contain">
-                <li class="li-header"><a class="text-header-a"  href="#">Inicio</a></li>
-                <li  class="li-header"><a class="text-header-a href="#">Serviços</a></li>
-                <li  class="li-header"><a class="text-header-a href="#">Depoimentos</a></li>
-                <li  class="li-header"><a class="text-header-a href="#">Contatos</a></li>
+              <li class="li-header "  ><a class="text-header-a" href="#">Inicio</a></li>
+              <li class="li-header"><a class="text-header-a" href="#">Serviços</a></li>
+              <li class="li-header"><a class="text-header-a" href="#">Depoimentos</a></li>
+              <li class="li-header"><a class="text-header-a" href="#">Contatos</a></li>              
             </ul>
         </nav>
 
         <div class="container">
            <a href="#"><button class="btn">Agendar</button></a>
           </div>
+    
     </header>
 
     <section class="slider">

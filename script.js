@@ -41,3 +41,12 @@ window.addEventListener("scroll", function(){
     // Se a rolagem vertical for menor ou igual a 100 pixels, a classe 'rolagem' será removida do 'header'
     header.classList.toggle('rolagem', window.scrollY > 10)
 })
+
+//Menu hambuguer 
+const btnMobile = document.getElementById('btn-mobile')
+
+function toggleMenu(){
+    const nav = document.getElementById('nav')  
+    nav.classList.toggle('active')
+}
+btnMobile.addEventListener('click', toggleMenu);
