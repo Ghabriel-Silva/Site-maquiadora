@@ -39,5 +39,5 @@ window.addEventListener("scroll", function(){
     // Adiciona ou remove a classe 'rolagem' ao elemento 'header' baseado na posição de rolagem vertical (scrollY) da janela
     // Se a rolagem vertical for maior que 100 pixels, a classe 'rolagem' será adicionada ao 'header'
     // Se a rolagem vertical for menor ou igual a 100 pixels, a classe 'rolagem' será removida do 'header'
-    header.classList.toggle('rolagem', window.scrollY > 100)
+    header.classList.toggle('rolagem', window.scrollY > 10)
 })
