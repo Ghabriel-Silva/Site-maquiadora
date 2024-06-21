@@ -4,7 +4,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body{
-    height: 330vh;
+    height: 100vh;
 }
 
 /*Header style*/
@@ -22,7 +22,6 @@ body{
 }
 header.rolagem{
     background-color:rgb(240, 240, 254);
-  
 }
 .img-logo{
     width:2em;
@@ -276,9 +275,6 @@ a{
  .container{
     display: none;
  }
- .nav-contain{
-display:none;
- }
  #btn-mobile{
   display: block;
 }
@@ -287,22 +283,19 @@ display:none;
   left: -9px;
   top: 10px;
 }
-header{
-  
-  background-color:rgb(240, 240, 254);
-}
+
 
 .nav-contain{
+  display: block;
   position: absolute;
   width: 100%;
   top: 50px;
   left: 0;
-  background-color:rgb(240, 240, 254);
-  height: 100vh;
-
-  
-  
-
+  background-color:rgba(255, 255, 255, 0.952);
+  height: 0px;
+  transition: .2s;
+  visibility: hidden;
+  overflow-y: hidden;
 }
 
 .nav-contain a{
@@ -314,13 +307,20 @@ header{
   padding-top: 3rem;
   font-size: 1.2em;
 }
-}
- #nav.active .nav-contain{
-  display: block;
 
- 
+#header.active-header{
+  background-color: rgba(255, 255, 255, 0.997);
+  transition:.3s ;
  }
-
-
+ #nav.active .nav-contain{
+  height: 100vh;
+  overflow-y: hidden;
+  z-index: 1000;
+  visibility: visible;
+  overflow-y: auto;
+  transition: .6s;
+ }
+ 
+}
 
  
