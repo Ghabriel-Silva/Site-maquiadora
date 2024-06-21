@@ -277,8 +277,12 @@ a{
  }
  #btn-mobile{
   display: block;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 .img-logo{
+  width: 35px;
   position: absolute;
   left: -9px;
   top: 10px;
@@ -304,7 +308,7 @@ a{
 }
 
 .nav-contain .li-header {
-  padding-top: 3rem;
+  padding-top: 4rem;
   font-size: 1.2em;
 }
 
@@ -320,7 +324,21 @@ a{
   overflow-y: auto;
   transition: .6s;
  }
- 
+ #hambur{
+  display: flex;
+  width: 30px;
+  border-top:2px solid black;
+  flex-direction: column;
+  justify-content: center;
+}
+ #hambur::after, #hambur::before{
+  display: block;
+  content: "";
+  width: 30px;
+  height: 2px;
+ background: #000000;
+ margin-top: 6px;
+ }
 }
 
  
