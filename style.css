@@ -341,7 +341,7 @@ a{
   width: 30px;
   height: 2px;
  margin-top: 6px;
- background: currentColor;
+ background: black;
  transition: .4s;
  position: relative;
 
