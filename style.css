@@ -4,7 +4,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body{
-    height: 100vh;
+    height: auto;
 }
 
 /*Header style*/
@@ -266,9 +266,6 @@ a{
   .img-desktop{
       display: none;
   }
-  .img-mobile{
-      display:block;
-  }
   .nav-auto, .nav-manual{
       margin-top: 168%;
   }
@@ -299,17 +296,21 @@ a{
   height: 0px;
   transition: .2s;
   visibility: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
+  z-index: 1000;
 }
 
 .nav-contain a{
   color: #A96224;
-
+  overflow-y: auto;
 }
 
-.nav-contain .li-header {
-  padding-top: 4rem;
-  font-size: 1.2em;
+#nav.active .li-header {
+  padding-top: 3rem;
+  font-size: 1em;
+}
+#nav.active .last-children{
+  padding-bottom: 100px;
 }
 
 #header.active-header{
@@ -319,11 +320,11 @@ a{
  }
  #nav.active .nav-contain{
   height: 100vh;
-  overflow-y: hidden;
   z-index: 1000;
   visibility: visible;
   overflow-y: auto;
   transition: .6s;
+
   
  }
  #hambur{

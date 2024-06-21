@@ -40,6 +40,7 @@ window.addEventListener("scroll", function(){
     // Se a rolagem vertical for maior que 100 pixels, a classe 'rolagem' será adicionada ao 'header'
     // Se a rolagem vertical for menor ou igual a 100 pixels, a classe 'rolagem' será removida do 'header'
     header.classList.toggle('rolagem', window.scrollY > 10)
+   
 })
 
 //Menu hambuguer 
