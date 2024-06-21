@@ -288,8 +288,10 @@ display:none;
   top: 10px;
 }
 header{
+  
   background-color:rgb(240, 240, 254);
 }
+
 .nav-contain{
   position: absolute;
   width: 100%;
@@ -297,6 +299,10 @@ header{
   left: 0;
   background-color:rgb(240, 240, 254);
   height: 100vh;
+
+  
+  
+
 }
 
 .nav-contain a{
@@ -311,6 +317,7 @@ header{
 }
  #nav.active .nav-contain{
   display: block;
+
  
  }
 
