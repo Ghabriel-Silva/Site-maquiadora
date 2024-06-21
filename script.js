@@ -43,13 +43,29 @@ window.addEventListener("scroll", function(){
 })
 
 //Menu hambuguer 
+
+
+// Obtém o elemento do botão móvel pelo seu ID e o armazena na variável btnMobile
 const btnMobile = document.getElementById('btn-mobile')
 
-function toggleMenu(){
-    const nav = document.getElementById('nav')  
-    nav.classList.toggle('active')
-    const headerMobile = document.getElementById('header')
-    headerMobile.classList.toggle('active-header')
+// Define a função toggleMenu que será chamada quando o botão móvel for clicado ou tocado
+function toggleMenu(event) {
+    // Verifica se o evento é um 'touchstart' e previne o comportamento padrão
+    if(event.type === 'touchstart') event.preventDefault()
     
+    // Obtém o elemento de navegação pelo seu ID e o armazena na variável nav
+    const nav = document.getElementById('nav')
+    // Alterna a classe 'active' no elemento de navegação, adicionando-a se não estiver presente e removendo-a se estiver
+    nav.classList.toggle('active')
+    
+    // Obtém o elemento do cabeçalho pelo seu ID e o armazena na variável headerMobile
+    const headerMobile = document.getElementById('header')
+    // Alterna a classe 'active-header' no elemento do cabeçalho, adicionando-a se não estiver presente e removendo-a se estiver
+    headerMobile.classList.toggle('active-header')
 }
-btnMobile.addEventListener('click', toggleMenu);
+
+// Adiciona um ouvinte de evento de clique ao botão móvel, que chama a função toggleMenu quando o botão é clicado
+btnMobile.addEventListener('click', toggleMenu)
+
+// Adiciona um ouvinte de evento de toque ao botão móvel, que chama a função toggleMenu quando o botão é tocado
+btnMobile.addEventListener('touchstart', toggleMenu)
