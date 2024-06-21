@@ -50,5 +50,6 @@ function toggleMenu(){
     nav.classList.toggle('active')
     const headerMobile = document.getElementById('header')
     headerMobile.classList.toggle('active-header')
+    
 }
 btnMobile.addEventListener('click', toggleMenu);

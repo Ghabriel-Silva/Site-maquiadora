@@ -315,6 +315,7 @@ a{
 #header.active-header{
   background-color: rgba(255, 255, 255, 0.997);
   transition:.3s ;
+  height: 80px;
  }
  #nav.active .nav-contain{
   height: 100vh;
@@ -323,22 +324,53 @@ a{
   visibility: visible;
   overflow-y: auto;
   transition: .6s;
+  
  }
  #hambur{
   display: flex;
   width: 30px;
-  border-top:2px solid black;
+  border-top:2px solid #000000;
   flex-direction: column;
   justify-content: center;
+  position: relative; 
+  
 }
  #hambur::after, #hambur::before{
   display: block;
   content: "";
   width: 30px;
   height: 2px;
- background: #000000;
  margin-top: 6px;
+ background: currentColor;
+ transition: .4s;
+ position: relative;
+
  }
+ #nav.active #hambur{
+  width: 19px;
+  transform: rotate(90deg);
+  border-color: #A96224;
+  top: -14px;
+  left: -27px
+  
+ }
+ #nav.active #hambur::after{
+  transform: rotate(69deg);
+  width: 33px;
+  left: -9px;
+  top: -31px;
+  background: #A96224;
+  height: 2px;
+ }
+ #nav.active #hambur::before{
+    transform: rotate(113deg);
+    width: 21px;
+    left: 2px;
+    top: -29px;
+    height: 2px;
+    background:#A96224;
+}
+ 
 }
 
  
