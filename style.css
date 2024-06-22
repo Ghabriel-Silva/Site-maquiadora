@@ -294,39 +294,38 @@ a{
   left: 0;
   background-color:rgba(255, 255, 255, 0.952);
   height: 0px;
-  transition: .2s;
-  visibility: hidden;
-  overflow-y: auto;
+  transition: .1s;
+  visibility:hidden;
+  overflow-y:hidden;
   z-index: 1000;
 }
-
-.nav-contain a{
-  color: #A96224;
-  overflow-y: auto;
-}
-
-#nav.active .li-header {
-  padding-top: 3rem;
-  font-size: 1em;
-}
-#nav.active .last-children{
-  padding-bottom: 100px;
-}
-
-#header.active-header{
-  background-color: rgba(255, 255, 255, 0.997);
-  transition:.3s ;
-  height: 80px;
- }
- #nav.active .nav-contain{
+#nav.active .nav-contain{
+  display: block;
   height: 100vh;
   z-index: 1000;
   visibility: visible;
   overflow-y: auto;
-  transition: .6s;
-
-  
+  transition: .3s;
  }
+
+.nav-contain a{
+  color: #A96224;
+}
+
+ .li-header {
+  padding-top: 3rem;
+  font-size: 1em;
+}
+#nav.active .last-children{
+  padding-bottom: 150px;
+}
+
+#header.active-header{
+  background-color: rgba(255, 255, 255, 0.997);
+  transition:.2s ;
+  height: 80px;
+ }
+
  #hambur{
   display: flex;
   width: 30px;
@@ -341,10 +340,10 @@ a{
   content: "";
   width: 30px;
   height: 2px;
- margin-top: 6px;
- background: black;
- transition: .4s;
- position: relative;
+  margin-top: 6px;
+  background: black;
+  transition: .4s;
+  position: relative;
 
  }
  #nav.active #hambur{
