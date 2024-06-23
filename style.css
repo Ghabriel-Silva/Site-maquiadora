@@ -1,4 +1,5 @@
 *{
+  box-sizing: border-box;
   margin: 0;
 }
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
@@ -20,7 +21,7 @@ body{
   transition: .5s;
 }
 header.rolagem{
-  background-color:rgb(240, 240, 254);
+  background-color:rgb(255, 255, 255);
 }
 .img-logo{
   width:2em;
@@ -239,7 +240,9 @@ a{
   transform-origin: bottom left;
 }
 
-
+.container-01{
+  display: none;
+}
 @media (max-width:900px){
       .container-servico{
           display: flex;
@@ -261,6 +264,7 @@ display: none;
 }
 
 
+
 @media (max-width:768px){
 .img-desktop{
     display: none;
@@ -271,12 +275,21 @@ display: none;
 .container{
   display: none;
 }
+
+
 #btn-mobile{
 display: block;
 border: none;
 background: none;
 cursor: pointer;
 }
+#nav.active .container-01, .btn{
+  display: flex;
+  color: #A96224;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
 .img-logo{
 width: 35px;
 position: absolute;
@@ -291,7 +304,7 @@ position: absolute;
 width: 100%;
 top: 50px;
 left: 0;
-background-color:rgba(255, 255, 255, 0.952);
+background-color:rgb(255, 255, 255);
 height: 0px;
 transition: .1s;
 visibility:hidden;
@@ -309,6 +322,7 @@ transition: .3s;
 
 .nav-contain a{
 color: #A96224;
+font-size: 20px;
 }
 
 .li-header {
@@ -316,11 +330,11 @@ padding-top: 3rem;
 font-size: 1.3em;
 }
 #nav.active .last-children{
-padding-bottom: 150px;
+padding-bottom: 70px;
 }
 
 #header.active-header{
-background-color: rgba(255, 255, 255, 0.997);
+background-color: rgb(255, 255, 255);
 transition:.2s ;
 height: 80px;
 }
