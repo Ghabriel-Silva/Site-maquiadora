@@ -64,18 +64,61 @@ a{
 /*Button style*/
 
 .btn {
-  color: #000000;
-  font-family: "Open Sans", sans-serif;
   position: relative;
-  display: inline-block;
-  cursor: pointer;
-  outline: none;
-  vertical-align: middle;
-  text-decoration: none;
-  background: transparent;
-  font-size: 15px;
-  border: none;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  padding-left: 49px;
+  transition: all 300ms; /* Aplicando transição para todas as propriedades */
+  font-weight: 200;
 }
+
+.btn::before {
+  content: "";
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #A96224;
+  z-index: -1;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 17px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transition: all 400ms; /* Aplicando transição para todas as propriedades */
+}
+
+.btn:hover {
+  padding-left: 15px;
+  color: white;
+  font-weight: 600;
+  -webkit-transform: scale(0.95); /* Adicionando prefixo para transform */
+          transform: scale(0.95); /* Mantendo a transform sem prefixo para navegadores modernos */
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn:hover::after {
+  left: calc(100% - 25px);
+}
+
 
 /*Container styles*/
 .container {
@@ -88,6 +131,8 @@ a{
 }
 /*Main button styles*/
 .btn {
+  border: none;
+  background: none;
   position: relative;
   height: fit-content;
   display: flex;
