@@ -2,11 +2,15 @@
   box-sizing: border-box;
   margin: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 4em;
+}
 body{
   width: 100vw;
   height: auto;
   overflow-x: hidden;
+  
 }
 
 /*Header style*/
@@ -44,7 +48,7 @@ a{
   text-decoration: none;
   color: #000000;
   font-family: "Open Sans", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   position: relative;
   cursor: pointer;
 }
@@ -230,7 +234,6 @@ a{
   font-size:1.3em;
 }
 .card-servico-texto{
-  font-weight:100;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   padding: 10px 20px 50px;
@@ -333,6 +336,99 @@ a{
  font-size: 16px;
 }
 
+
+
+/*style depoimentos*/
+
+.depoimentos{
+  width: 100%;
+  max-width: 900px;
+  margin: auto ;
+  position: relative;
+  overflow: hidden;
+}
+.depoimentos .slider-depoimentos{
+ padding: 0 50px;
+}
+.depoimentos .slider-depoimentos:active{
+  cursor: grab;
+}
+.depoimentos .depoi-h3{
+  text-align: center;
+  font-size: 2.5em;
+  padding: 10px 0 30px 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight:300;
+  color:#E05E8C;
+}
+.depoimentos  i{
+  font-size: 90px;
+  color: #b4aeae;
+}
+.depoimentos p.depoi-text{
+font-weight: 300;
+margin-bottom: 40px;
+text-align: center;
+
+}
+
+.slider-depoimentos .person img{
+  width: 80px;
+  height: 80px;
+}
+.slider-depoimentos .person{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.slider-depoimentos .person, p.info-person{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/*styke footer*/
+.footer{
+  width: 100%;
+  margin-top:90px;
+  padding-top: 30px;
+  background-color: #FEA479;
+}
+.final-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-titulo{
+  font-size: 2.5em;
+  padding: 10px 0 30px 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight:300;
+  color:#A96224;
+}
+.footer-text{
+  color: #fff;
+}
+.footer-social-media{
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.footer-info{
+  color: #fff;
+  text-align: center;
+  font-size:13px;
+}
+.footer-desenvolvedor{
+  padding: 40px 0px 10px;
+  color: #fff;
+  text-align: center;
+  font-size:10px;
+}
 @media (max-width:900px){
       .container-servico{
           display: flex;

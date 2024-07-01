@@ -70,3 +70,6 @@ btnMobile.addEventListener('click', toggleMenu)
 
 // Adiciona um ouvinte de evento de toque ao botão móvel, que chama a função toggleMenu quando o botão é tocado
 btnMobile.addEventListener('touchstart', toggleMenu)
+
+
+
