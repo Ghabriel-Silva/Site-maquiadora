@@ -484,7 +484,10 @@ cursor: pointer;
 width: 35px;
 position: absolute;
 left: -9px;
-top: 10px;
+top: -15px;
+}
+#header.active-header .img-logo{
+  top: -29px;
 }
 
 
@@ -575,4 +578,3 @@ height: 2px;
 }
 
 }
-
