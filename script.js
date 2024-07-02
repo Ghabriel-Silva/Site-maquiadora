@@ -63,6 +63,8 @@ function toggleMenu(event) {
     const headerMobile = document.getElementById('header')
     // Alterna a classe 'active-header' no elemento do cabeçalho, adicionando-a se não estiver presente e removendo-a se estiver
     headerMobile.classList.toggle('active-header')
+
+
 }
 
 // Adiciona um ouvinte de evento de clique ao botão móvel, que chama a função toggleMenu quando o botão é clicado
@@ -71,3 +73,30 @@ btnMobile.addEventListener('click', toggleMenu)
 // Adiciona um ouvinte de evento de toque ao botão móvel, que chama a função toggleMenu quando o botão é tocado
 btnMobile.addEventListener('touchstart', toggleMenu)
 
+
+
+
+
+//function esconde nav mobile 
+
+
+//O forEach é um método disponível para NodeList (e também para arrays) que nos permite iterar sobre cada item na lista. No seu caso, você itera sobre a NodeList linkaNav, que contém todos os links selecionados.
+
+//Dentro do forEach, você define uma função callback que recebe um parâmetro (no seu caso, chamado de link). Esse parâmetro representa cada elemento individual da NodeList durante a iteração. Para cada link na NodeList, você adiciona um evento de clique (click) utilizando link.addEventListener('click', removeNav).
+
+//Isso significa que cada vez que um dos links com a classe .text-header-a é clicado, a função removeNav será executada, removendo a classe active do elemento #nav e, assim, fechando o menu, proporcionando uma interação consistente e controlada para o usuário.
+
+
+//resumo do código 
+//seleciono  todos os links através da class .text-header-a, e uso o método for each para que eu consiga interar a função em cada link, depois crio a função para remover a class active 
+
+const selectLink = document.querySelectorAll('.text-header-a')
+
+function removeNav(){
+    const removeNavnow = document.getElementById('nav')
+    removeNavnow.classList.remove('active')
+}
+
+selectLink.forEach(link=>{
+    link.addEventListener('click', removeNav)
+})
