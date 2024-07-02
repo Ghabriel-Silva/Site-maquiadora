@@ -40,8 +40,25 @@ window.addEventListener("scroll", function(){
     // Se a rolagem vertical for maior que 100 pixels, a classe 'rolagem' será adicionada ao 'header'
     // Se a rolagem vertical for menor ou igual a 100 pixels, a classe 'rolagem' será removida do 'header'
     header.classList.toggle('rolagem', window.scrollY > 10)
+    
+
+
+
+
+    // neste exemplo abaixo basicamente estou dizendo que se o nav conter a class active não vai ser removido a class active-header, porém se não conter a class active ira ser removido o active-header, isso devido a operador lógico de negação que inverte valores
+    const navheader = document.getElementById('nav');
+    if (!navheader.classList.contains('active')) {
+        header.classList.remove('active-header');
+    }
    
 })
+
+
+
+
+
+
+
 
 //Menu hambuguer 
 
@@ -53,6 +70,7 @@ const btnMobile = document.getElementById('btn-mobile')
 function toggleMenu(event) {
     // Verifica se o evento é um 'touchstart' e previne o comportamento padrão
     if(event.type === 'touchstart') event.preventDefault()
+        
     
     // Obtém o elemento de navegação pelo seu ID e o armazena na variável nav
     const nav = document.getElementById('nav')
@@ -63,6 +81,7 @@ function toggleMenu(event) {
     const headerMobile = document.getElementById('header')
     // Alterna a classe 'active-header' no elemento do cabeçalho, adicionando-a se não estiver presente e removendo-a se estiver
     headerMobile.classList.toggle('active-header')
+  
 
 
 }
