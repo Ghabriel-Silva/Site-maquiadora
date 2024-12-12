@@ -119,14 +119,3 @@ function removeNav(){
 selectLink.forEach(link=>{
     link.addEventListener('click', removeNav)
 })
-
-window.sr = ScrollReveal({ reset: true})
-
-sr.reveal('#area-1', {duration: 1500})
-sr.reveal('#depoimentos', {duration: 1000})
-sr.reveal('#servicos', {duration: 1000})
-sr.reveal('#depoimentos', {duration: 1000})
-sr.reveal('#portifolio', {duration: 1000})
-
-
-//#area-1, #area-2, #depoimentos, #servicos, #depoimentos, #portifolio
