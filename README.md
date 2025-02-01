@@ -46,9 +46,9 @@ npm run dev
 Para implantar este projeto em um ambiente ativo, siga as instruções do provedor de hospedagem escolhido.
 
 ## 🛠️ Construído com
-- HTML, CSS e JavaScript
-- React.js
-- Firebase (para backend e autenticação)
+-JavaScript
+- HTML
+- Css
 
 ## ✒️ Autores
 - **Ketlin Appelt** - Maquiadora Profissional
