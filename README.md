@@ -1,113 +1,65 @@
-💄 Portfólio de Maquiadora Profissional
+# Maquiagem-Site
 
-Este repositório contém o código-fonte do site portfólio de Ketlin Appelt, uma maquiadora profissional especializada em maquiagem para noivas, festas e eventos, além de oferecer cursos de maquiagem. O site tem como objetivo apresentar os serviços oferecidos, exibir trabalhos realizados e facilitar o agendamento de horários.
+## Portfólio de Maquiadora Profissional
 
-🔗 Acesse o site: ketlinappelt.com.br
+Este repositório contém o código-fonte do site portfólio de Ketlin Appelt, uma maquiadora profissional especializada em maquiagem para noivas, festas e eventos, bem como cursos de maquiagem. O objetivo deste projeto é apresentar os serviços oferecidos, mostrar trabalhos realizados e facilitar o agendamento de horários.
 
-🚀 Começando
+🔗 [Acesse o site aqui](https://ketlinappelt.com.br/)
 
+---
+
+## 🚀 Começando
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-Consulte a seção 📦 Implantação para saber como colocar o projeto em produção.
+Consulte **Implantação** para saber como implantar o projeto.
 
-📋 Pré-requisitos
+## 📋 Pré-requisitos
+Antes de começar, certifique-se de ter os seguintes requisitos instalados:
+- Node.js
+- NPM ou Yarn
+- Git
 
-Antes de iniciar, certifique-se de ter as seguintes ferramentas instaladas:
+## 🔧 Instalação
 
-Node.js e npm
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seuusuario/maquiagem-site.git
+   ```
 
-Git
+2. Acesse o diretório do projeto:
+   ```bash
+   cd maquiagem-site
+   ```
 
-Um editor de código, como o Visual Studio Code
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-🔧 Instalação
+## ⚙️ Executando o projeto
+Para iniciar o servidor de desenvolvimento, execute:
+```bash
+npm run dev
+```
 
-Clone este repositório:
+## 📦 Implantação
+Para implantar este projeto em um ambiente ativo, siga as instruções do provedor de hospedagem escolhido.
 
-git clone https://github.com/seu-usuario/maquiagem-sit.git
+## 🛠️ Construído com
+- HTML, CSS e JavaScript
+- React.js
+- Firebase (para backend e autenticação)
 
-Acesse o diretório do projeto:
+## ✒️ Autores
+- **Ketlin Appelt** - Maquiadora Profissional
+- **Gabriel Silva** - Desenvolvimento do site
 
-cd maquiagem-sit
+## 📄 Licença
+Este projeto está sob a licença MIT - veja o arquivo LICENSE para detalhes.
 
-Instale as dependências:
+## 🎁 Expressões de gratidão
+- Agradecimento especial a todos os clientes que confiaram no trabalho da Ketlin Appelt!
+- Se você gostou do projeto, considere compartilhar! 📢
 
-npm install
-
-Inicie o servidor local:
-
-npm start
-
-Agora o projeto estará rodando em http://localhost:3000/.
-
-⚙️ Executando os testes
-
-Para executar os testes automatizados, utilize:
-
-npm test
-
-🔩 Testes de ponta a ponta
-
-Os testes e2e verificam a usabilidade e funcionamento correto das principais funcionalidades do site.
-
-⌨️ Testes de estilo de codificação
-
-Para garantir um padrão de código consistente, utilize:
-
-npm run lint
-
-📦 Implantacão
-
-Para implantar o site em produção, siga estas etapas:
-
-Realize o build do projeto:
-
-npm run build
-
-Envie os arquivos para o servidor ou plataforma de hospedagem desejada (como Vercel ou Netlify).
-
-🛠️ Construído com
-
-React.js - Biblioteca para construção da interface
-
-Firebase - Autenticação e armazenamento de dados
-
-Styled Components - Estilização do site
-
-🖇️ Colaborando
-
-Para contribuir com o projeto, siga estas etapas:
-
-Faça um fork do repositório
-
-Crie uma nova branch (git checkout -b minha-feature)
-
-Faça suas alterações e commite (git commit -m 'Adiciona nova feature')
-
-Envie para o repositório (git push origin minha-feature)
-
-Abra um Pull Request
-
-📌 Versão
-
-Utilizamos SemVer para controle de versão. Consulte as tags do repositório para versões disponíveis.
-
-✒️ Autores
-
-Ketlin Appelt - Maquiadora Profissional - Instagram
-
-[Seu Nome] - Desenvolvedor - GitHub
-
-📄 Licença
-
-Este projeto está sob a licença MIT - veja o arquivo LICENSE.md para detalhes.
-
-🎁 Expressões de gratidão
-
-⭐ Se gostou do projeto, deixe uma star no GitHub!
-
-📢 Compartilhe com seus amigos e colegas de trabalho.
-
-☕ Apoie a maquiadora contratando seus serviços!
 
 
